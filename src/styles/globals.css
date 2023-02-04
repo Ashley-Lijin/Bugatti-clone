@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.CustomImage-pc {
+    background-image: url('/Home-bg-pc.png') ;
+}
+
+.CustomImage-tab{
+    background-image: url('/Home-bg-tab.png');
+}
+
+.CustomImage-mob{
+    background-image: url('/Home-bg-mob.png');
+}
