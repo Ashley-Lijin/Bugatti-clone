@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 
-.CustomImage-pc {
+/* .CustomImage-pc {
     background-image: url('/Home-bg-pc.png') ;
 }
 
@@ -13,4 +13,58 @@
 
 .CustomImage-mob{
     background-image: url('/Home-bg-mob.png');
-}
+} */
+
+
+@layer components{
+    .header{
+        @apply flex justify-around items-center w-full h-full px-2 2xl:px-16 
+    }
+    .nav{
+        @apply fixed w-full h-12 z-20  dark:bg-neutral-900 bg-slate-100
+    }
+    .burger-container{
+        @apply absolute left-5 top-3 z-10 cursor-pointer
+    }
+    .burger-btn{
+        @apply dark:text-white text-black
+    }
+    .header-navigation{
+        @apply fixed left-0 top-0 w-screen h-screen bg-fixed dark:bg-neutral-900 bg-slate-100 p-10 ease-in-out duration-500
+    }
+
+    .header-navigation1{
+        @apply  absolute left-0 -translate-y-full flex justify-center items-center w-full h-screen bg-cover bg-fixed bg-center text-center ease-out duration-500  bg-black/80 z-[2]
+    }
+
+    .mainnav{
+        @apply dark:text-gray-300 text-neutral-700 flex flex-col mt-6 2xl:pl-16 2xl:top-10
+    }
+
+    .mainnav-menu{
+        @apply  xl:flex pt-16 mt-5 md:pt-2 lg:mt-14 2xl:pt-5 xl:items-center xl:text-center ease-in-out duration-300
+    }
+
+    .mainnav-menu-item{
+        @apply  xl:flex mt-5 md:pt-2 xl:items-center xl:text-center ease-in-out duration-300
+    }
+    .mainnav-menu-item-with-sub{
+        @apply text-2xl font-semibold uppercase sm:text-4xl lg:ml-10  xl:text-5xl  2xl:text-6xl dark:hover:text-white duration-300 hover:text-black
+    }
+    .sub-menu{
+        @apply xl:flex py-4
+    }
+    .page-header-logo{
+        @apply flex justify-center -mt-10 text-xl font-semibold dark:text-white
+    }
+
+    .sub-menuItem{
+        @apply pr-5 xl:px-5
+    }
+    .sub-menu-Item{
+        @apply pr-5
+    }
+    .sub-menu-text{
+        @apply text-xl uppercase
+    }
+}   
